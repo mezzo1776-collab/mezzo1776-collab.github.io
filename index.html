@@ -7,6 +7,7 @@
   <meta name="description" content="Портфолио Елизаветы Лепехиной — инженер по автоматизации, АСУ ТП и программированию ПЛК.">
   <title>Елизавета Лепехина — инженер по автоматизации</title>
   <style>
+    
     :root {
       --bg: #0b1220; --panel: #121d30; --panel2: #17253b;
       --text: #edf3fb; --muted: #a9b7cb; --accent: #63e0c0;
@@ -75,6 +76,16 @@
     .contact-links { display:grid; gap:9px; text-align:right; }
     .contact-links a { text-decoration:none; font-weight:700; }
     footer { padding:28px 0 38px; color:var(--muted); font-size:.88rem; text-align:center; }
+    .profile-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 26px;
+    margin-bottom: 24px;
+    border: 2px solid rgba(99, 224, 192, 0.5);
+    }
+
     @media (max-width:760px) {
       .nav { align-items:flex-start; flex-direction:column; }
       nav { gap:13px; }
@@ -116,7 +127,8 @@
       </div>
     </div>
     <aside class="profile-card">
-      <div class="monogram" aria-hidden="true">ЕЛ</div>
+      <img class="profile-photo" src="photo.jpg"
+         alt="Фотография Елизаветы Лепехиной">
       <h2>Инженер-проектировщик АСУ ТП</h2>
       <p>Инженер-программист ПЛК · SCADA-разработчик</p>
       <ul class="mini-list">
