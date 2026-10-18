@@ -85,6 +85,27 @@
     margin-bottom: 24px;
     border: 2px solid rgba(99, 224, 192, 0.5);
     }
+    .card,
+    .info-card,
+    .project-card,
+    .skill-card,
+    .panel {
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+      }
+    
+    .card:hover,
+    .info-card:hover,
+    .project-card:hover,
+    .skill-card:hover,
+    .panel:hover {
+      transform: translateY(-4px);
+      border-color: #63e0c0;
+      box-shadow: 0 8px 24px rgba(45, 212, 191, 0.14);
+      }
 
     @media (max-width:760px) {
       .nav { align-items:flex-start; flex-direction:column; }
